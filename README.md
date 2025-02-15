@@ -115,8 +115,8 @@ Final Similarity Score: 85.35
 📩 Contact & Contributions
 
 Want to contribute? Pull requests are welcome! 🎉
-📧 Email: yourname@email.com
-🌍 GitHub: github.com/yourusername
+📧 Email: gauthamnnair@tutanota.com
+🌍 GitHub: github.com/gauthamnnair
 📜 License
 
 This project is licensed under the MIT License.
