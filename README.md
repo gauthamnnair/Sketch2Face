@@ -159,6 +159,19 @@ This project is licensed under the **MIT License**.
 
 ---
 
+## 🎖️ Credits  
+
+- **Dataset:** [CUHK Face Sketch Database (CUFS)](https://www.kaggle.com/arbazkhan971)  
+- **Model:** [Face-Sketch-to-Colour-Image](https://github.com/Ethan-Jolly)  
+
+---
+
+## 📚 Sources  
+
+- **Dataset Link:** [Kaggle CUHK Face Sketch Database (CUFS)](https://www.kaggle.com/datasets/arbazkhan971/cuhk-face-sketch-database-cufs/data)  
+- **Model Link:** [Face Sketch to Colour Image - GitHub](https://github.com/Ethan-Jolly/Face-Sketch-to-Colour-Image/)
+
+---
 ## 🚀 Final Thoughts  
 
 **Sketch2Face** is a **powerful AI-based tool** that helps reconstruct and match criminal sketches. 🚔🔍  
