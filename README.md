@@ -116,7 +116,7 @@ Most similar image: suspect_002.jpg
 Cosine Similarity: 0.9421, Euclidean Distance: 2.3874
 Final Similarity Score: 85.35
 
-    The most similar face is suspect_002.jpg, and 85.35% accurate.
+The most similar face is suspect_002.jpg, and 85.35% accurate.
 
 ## 📸 Example UI Screenshot  
 
