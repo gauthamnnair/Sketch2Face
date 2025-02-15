@@ -1,15 +1,20 @@
-📌 Sketch2Face – Criminal Sketch Recognition System
-🔍 Overview
+# 📌 Sketch2Face – Criminal Sketch Recognition System  
 
-Sketch2Face is an AI-powered criminal sketch processing and recognition system.
-It:
-✅ Reconstructs realistic images from uploaded sketches using a trained VAE model.
-✅ Compares the reconstructed image with a database of real photos using DeepFace.
-✅ Finds the most similar face using a combination of cosine similarity and Euclidean distance.
-✅ Stores logs of uploads & reconstructions for future reference.
-✅ Secure login system to prevent unauthorized access.
-📂 Project Structure
-'''
+## 🔍 Overview  
+
+**Sketch2Face** is an AI-powered **criminal sketch processing and recognition system**.  
+It:  
+✅ **Reconstructs realistic images** from uploaded sketches using a trained **VAE model**.  
+✅ **Compares the reconstructed image** with a database of real photos using **DeepFace**.  
+✅ **Finds the most similar face** using a combination of **cosine similarity and Euclidean distance**.  
+✅ **Stores logs of uploads & reconstructions** for future reference.  
+✅ **Secure login system** to prevent unauthorized access.  
+
+---
+
+## 📂 Project Structure  
+
+
 Sketch2Face
 main.py                # Main application (Tkinter GUI with login, upload, processing)
 compare.py             # Compares reconstructed images with a dataset
@@ -19,7 +24,7 @@ logs/                  # Stores all uploaded & reconstructed images
 temp/                  # Temporary directory for uploaded images
 Kaggle/photos/         # Dataset of real images for comparison
 requirements.txt       # Required Python dependencies
-'''
+
 Model Link: https://drive.google.com/file/d/1xjaaxZM-LaHU8L5MX9elyxRf0qEM9e_B/view?usp=drive_link
 
 🚀 Features
