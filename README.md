@@ -25,44 +25,52 @@ temp/                  # Temporary directory for uploaded images
 Kaggle/photos/         # Dataset of real images for comparison
 requirements.txt       # Required Python dependencies
 
-Model Link: https://drive.google.com/file/d/1xjaaxZM-LaHU8L5MX9elyxRf0qEM9e_B/view?usp=drive_link
+---
 
-🚀 Features
+## 🚀 Features  
 
-✔ Secure Login System – Users must log in before accessing the application.
-✔ Sketch Upload & Reconstruction – Converts sketches into realistic images using a Variational Autoencoder (VAE).
-✔ Face Comparison using Deep Learning – Uses DeepFace for accurate face matching.
-✔ Similarity Score Calculation – Uses a hybrid scoring system based on cosine similarity and Euclidean distance.
-✔ Log Management – Saves each upload & reconstruction inside a numbered folder for easy tracking.
-⚙️ Installation
-1️⃣ Clone the Repository
+✔ **Secure Login System** – Users must log in before accessing the application.  
+✔ **Sketch Upload & Reconstruction** – Converts sketches into realistic images using a **Variational Autoencoder (VAE)**.  
+✔ **Face Comparison using Deep Learning** – Uses **DeepFace** for accurate face matching.  
+✔ **Similarity Score Calculation** – Uses a **hybrid scoring system** based on **cosine similarity and Euclidean distance**.  
+✔ **Log Management** – Saves **each upload & reconstruction** inside a numbered folder for easy tracking.  
 
+---
+
+## ⚙️ Installation  
+
+### 1️⃣ Clone the Repository  
+```bash
 git clone https://github.com/yourusername/Sketch2Face.git
 cd Sketch2Face
+```
 
-2️⃣ Install Dependencies
-
+###2️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
-🖥️ How to Run
-🔑 Step 1: Start the Application
+**🔗 Model Download Link:** [Click Here](https://drive.google.com/file/d/1xjaaxZM-LaHU8L5MX9elyxRf0qEM9e_B/view?usp=drive_link)  
 
+###🖥️ How to Run
+###🔑 Step 1: Start the Application
+```bash
 python main.py
-
+```
     Login with credentials:
         Username: admin
         Password: password123
 
-📤 Step 2: Upload a Sketch
+###📤 Step 2: Upload a Sketch
 
     Click "Upload Sketch", select a file, and confirm.
 
-🎨 Step 3: Generate & Compare
+###🎨 Step 3: Generate & Compare
 
     Click "Submit Sketch" to generate a realistic face and find the closest match.
     Wait 2-3 minutes for processing.
 
-📂 Step 4: View Results & Logs
+###📂 Step 4: View Results & Logs
 
     See three images side-by-side:
     ✅ Original Sketch
