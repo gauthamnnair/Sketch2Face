@@ -121,7 +121,9 @@ Final Similarity Score: 85.35
 ## 📸 Example UI Screenshot  
 
 ✅ **Main Interface (Sketch Upload & Processing)**  
-![Sketch2Face UI](https://via.placeholder.com/600x300.png?text=Upload+Sketch+UI)  
+![Login-Page](https://github.com/user-attachments/assets/aa5daf2f-ab3f-4791-a32c-80a8c526ac68)
+![Sketch-Upload](https://github.com/user-attachments/assets/cda9fb8a-f17c-4116-b5ed-7f3d9d1fbbc9)
+![Final-Output](https://github.com/user-attachments/assets/2cdf9523-3f71-45e7-a977-a360d3f4bf36)
 
 ✅ **Final Output (3 Images Side by Side)**  
 ![Result](https://via.placeholder.com/600x300.png?text=Sketch+|+Reconstruction+|+Match)  
@@ -150,12 +152,6 @@ Final Similarity Score: 85.35
 Want to contribute? **Pull requests are welcome!** 🎉  
 📧 **Email:** [gauthamnnair@tutanota.com](mailto:gauthamnnair@tutanota.com)  
 🌍 **GitHub:** [github.com/gauthamnnair](https://github.com/gauthamnnair)  
-
----
-
-## 📜 License  
-
-This project is licensed under the **MIT License**.  
 
 ---
 
