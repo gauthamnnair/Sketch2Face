@@ -11,15 +11,17 @@ It:
 📂 Project Structure
 
 Sketch2Face/
-│── main.py                # Main application (Tkinter GUI with login, upload, processing)
-│── compare.py             # Compares reconstructed images with a dataset
-│── run_model.py           # Generates reconstructed images from uploaded sketches
-│── Model_Maker.ipynb      # Notebook for training the VAE model
-│── logs/                  # Stores all uploaded & reconstructed images
-│── temp/                  # Temporary directory for uploaded images
-│── Kaggle/photos/         # Dataset of real images for comparison
-│── requirements.txt       # Required Python dependencies
-│── README.md              # Project Documentation (this file)
+main.py                # Main application (Tkinter GUI with login, upload, processing)
+ompare.py             # Compares reconstructed images with a dataset
+run_model.py           # Generates reconstructed images from uploaded sketches
+Model_Maker.ipynb      # Notebook for training the VAE model
+logs/                  # Stores all uploaded & reconstructed images
+temp/                  # Temporary directory for uploaded images
+Kaggle/photos/         # Dataset of real images for comparison
+requirements.txt       # Required Python dependencies
+README.md              # Project Documentation (this file)
+
+Model Link: https://drive.google.com/file/d/1xjaaxZM-LaHU8L5MX9elyxRf0qEM9e_B/view?usp=drive_link
 
 🚀 Features
 
