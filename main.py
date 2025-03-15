@@ -10,36 +10,10 @@ import tensorflow as tf
 import warnings
 from pages import view_records, add_criminal_record
 import json
+import login as l
 
-# Suppress TensorFlow debug & info messages
-os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"  # 0 = all messages, 1 = filter INFO, 2 = filter WARNING, 3 = filter ERROR
-
-# Suppress TensorFlow warnings
-tf.get_logger().setLevel(logging.ERROR)
-warnings.filterwarnings("ignore", category=DeprecationWarning)
-warnings.filterwarnings("ignore", category=UserWarning)
-
-# Hardcoded login details
-USERNAME = "admin"
-PASSWORD = "password123"
-
-is_logged_in = False
 uploaded_filepath = None
 dashboard_window = None  # Ensure global reference
-
-def login():
-    """Handles user login and opens the dashboard."""
-    global is_logged_in
-    username = username_entry.get()
-    password = password_entry.get()
-
-    if username == USERNAME and password == PASSWORD:
-        is_logged_in = True
-        messagebox.showinfo("Login Successful", "Welcome to the Criminal Records System!")
-        login_window.destroy()
-        open_dashboard()
-    else:
-        messagebox.showerror("Login Failed", "Invalid username or password.")
 
 def save_to_logs(original_path, reconstructed_path):
     """Saves uploaded and reconstructed images in a folder named after the uploaded filename."""
@@ -98,11 +72,11 @@ def open_dashboard():
     dashboard_window = tk.Tk()
     dashboard_window.title("Dashboard")
     dashboard_window.state('zoomed')
-    dashboard_window.configure(bg="#f0f0f0")
+    dashboard_window.configure(bg="black")
 
     tk.Label(dashboard_window, text="Dashboard", font=("Arial", 20, "bold"), bg="#f0f0f0").pack(pady=20)
 
-    button_frame = tk.Frame(dashboard_window, bg="#f0f0f0")
+    button_frame = tk.Frame(dashboard_window, bg="black")
     button_frame.pack(pady=50)
 
     add_record_button = tk.Button(button_frame, text="Add Criminal Record", command=lambda: add_criminal_record(dashboard_window), bg="#4CAF50", fg="white", padx=20, pady=10)
@@ -360,21 +334,7 @@ def close_draw_faces():
         draw_faces_window.destroy()
         del draw_faces_window
 
-# Login window setup
-login_window = tk.Tk()
-login_window.title("Login")
-login_window.state('zoomed')
+# Register the function in login.py
+l.set_notify_callback(open_dashboard)
 
-tk.Label(login_window, text="Welcome to Third Eye", font=("Arial", 20, "bold")).pack(pady=20)
-tk.Label(login_window, text="Username:").pack(pady=5)
-username_entry = tk.Entry(login_window)
-username_entry.pack(pady=5)
-
-tk.Label(login_window, text="Password:").pack(pady=5)
-password_entry = tk.Entry(login_window, show="*")
-password_entry.pack(pady=5)
-
-login_button = tk.Button(login_window, text="Login", command=login, bg="#4CAF50", fg="white", padx=20, pady=10)
-login_button.pack(pady=20)
-
-login_window.mainloop()
+l.show_login_page()
