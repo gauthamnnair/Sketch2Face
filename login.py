@@ -143,7 +143,7 @@ def show_signup_page():
     cmf.show_banner("static/banner.jpg", signup_window)
 
     # Outer frame to create a colored border effect
-    outer_frame = tk.Frame(signup_window, bg="blue", padx=3, pady=3)
+    outer_frame = tk.Frame(signup_window, bg="black", padx=3, pady=3)
     outer_frame.pack(padx=10, pady=10, fill="both", expand=True)  # Fill and expand
 
     # Inner frame (actual form container with a solid border)
@@ -193,7 +193,7 @@ def show_login_page():
     cmf.show_banner("static/banner.jpg", login_window)
 
     # Outer frame to create a colored border effect
-    outer_frame = tk.Frame(login_window, bg="blue", padx=3, pady=3)
+    outer_frame = tk.Frame(login_window, bg="black", padx=3, pady=3)
     outer_frame.pack(padx=10, pady=10, fill="both", expand = True)  # Fill and expand
 
     # Inner frame (actual form container with a solid border)

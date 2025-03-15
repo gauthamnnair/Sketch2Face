@@ -11,6 +11,7 @@ import warnings
 from pages import view_records, add_criminal_record
 import json
 import login as l
+import common_features as cmf
 
 uploaded_filepath = None
 dashboard_window = None  # Ensure global reference
@@ -74,13 +75,15 @@ def open_dashboard():
     dashboard_window.state('zoomed')
     dashboard_window.configure(bg="black")
 
+    cmf.show_banner("static/banner.jpg", dashboard_window)
+
     tk.Label(dashboard_window, text="Dashboard", font=("Arial", 20, "bold"), bg="#f0f0f0").pack(pady=20)
 
     button_frame = tk.Frame(dashboard_window, bg="black")
     button_frame.pack(pady=50)
 
     add_record_button = tk.Button(button_frame, text="Add Criminal Record", command=lambda: add_criminal_record(dashboard_window), bg="#4CAF50", fg="white", padx=20, pady=10)
-    view_records_button = tk.Button(button_frame, text="View Records", command=view_records, bg="#4CAF50", fg="white", padx=20, pady=10)
+    view_records_button = tk.Button(button_frame, text="View Records", command=view_records, bg="blue", fg="white", padx=20, pady=10)
     draw_faces_button = tk.Button(button_frame, text="Draw Faces", command=draw_faces, bg="#4CAF50", fg="white", padx=20, pady=10)
 
     add_record_button.pack(side=tk.LEFT, padx=20)
